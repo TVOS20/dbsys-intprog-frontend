@@ -1,12 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Axios from "axios";
 
 import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
 import Customer from "./pages/Customer";
 import Employee from "./pages/Employee";
 import Office from "./pages/Office";
 import Product from "./pages/Product";
+
+Axios.defaults.baseURL = "http://localhost:4000";
 
 function App() {
   return (
@@ -14,8 +15,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
           <Route path="/employee" element={<Employee />} />
           <Route path="/office" element={<Office />} />
           <Route path="/customer" element={<Customer />} />
