@@ -10,19 +10,14 @@ const Home = () => {
           onClick={() => navigate("/employee")}
           className="bg-slate-200 text-black text-2xl font-bold py-2 px-8 rounded transition-all hover:bg-slate-300"
         >
-          Employee
+          Employee and Office Management
         </button>
-        <button
-          onClick={() => navigate("/office")}
-          className="bg-slate-200 text-black text-2xl font-bold py-2 px-8 rounded transition-all hover:bg-slate-300"
-        >
-          Office
-        </button>
+
         <button
           onClick={() => navigate("/product")}
           className="bg-slate-200 text-black text-2xl font-bold py-2 px-8 rounded transition-all hover:bg-slate-300"
         >
-          Product
+          Product Management
         </button>
       </div>
     </div>
