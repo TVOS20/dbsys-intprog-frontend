@@ -19,9 +19,15 @@ const Home = () => {
         >
           Product Management
         </button>
+
+        <button
+          onClick={() => navigate("/inventory")}
+          className="bg-slate-200 text-black text-2xl font-bold py-2 px-8 rounded transition-all hover:bg-slate-300"
+        >
+          Inventory
+        </button>
       </div>
     </div>
   );
 };
-
 export default Home;
